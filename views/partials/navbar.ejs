@@ -1,44 +1,20 @@
 <div class="container my-3">
     <div class="row">
         <div class="col-md-5 offset-md-7 text-right">
-            <div class="logo  mx-4"><b>WRG Autoparts</b></div>
+            <div class="logo  mx-4"><b>Dengue</b></div>
         </div>
     </div>
     <div class="row my-5">
         <div class="container gray highlightTextIn text-right">
             <div class="col-md-5 offset-md-7 text-right">
-                <a href="/" class="nav-link1" alt="Home">Home</a>
-                <a href="/" class="nav-link1" alt="Forum">Forum</a>
+                    <a href="/" class="nav-link1" alt="About">About</a>
+                    <a href="Transmission" class="nav-link1" alt="Transmission">Transmission</a>
+                    <a href="Prevention" class="nav-link1" alt="Prevention">Prevention</a>
+                <a href="Treatment" class="nav-link1" alt="Treatment">Treatment</a>
 
-                <% if(name != false){%>
-                    <div class="btn-group">
-                        <a href="#" alt="<%= name %>" class="nav-link1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <%= name %>
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#"><i class="fa fa-user-shield    "></i>&nbsp;&nbsp;&nbsp;Profile</a>
-                            <a class="dropdown-item" href="#"><i class="fa fa-cog" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;Settings</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" id="logout" href="#"><i class="fas fa-sign-out-alt    "></i>&nbsp;&nbsp;&nbsp; Log Out</a>
-                        </div>
-                    </div>
-                    <form name='myForm' action="/logout" method='post'>
-                        <input type="hidden" name="thisIsTheParameterName" value="logout" />
-                    </form>
-
-
-                    <%} else {%>
-                        <a href="login" class="nav-link1" alt="Login">Login</a>
-                        <a href="/signup" class="nav-link1" alt="Sign up">Sign up</a>
-                        <%}%>
+                  
             </div>
 
         </div>
     </div>
 </div>
-
-<script>
-    $('#logout').on('click', () => {
-        document.forms["myForm"].submit();
-    })
-</script>

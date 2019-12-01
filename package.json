@@ -37,7 +37,9 @@
     "scripts": {
         "start": "node index.js",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "sass:compile": "node-sass --include-path sass public/css/breadcrumb.scss public/css/breadcrumb.css"
+        "sass:compile": "node-sass --include-path sass public/css/breadcrumb.scss public/css/breadcrumb.css",
+        "nodey" : " nodemon"
+
     },
     "keywords": [],
     "author": "",
